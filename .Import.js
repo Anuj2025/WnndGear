@@ -9,7 +9,7 @@ async function Wheather() {
 
   const Whe = await fetch(`${url}`).then(res => res.json());
   document.querySelector(".temp").innerHTML = `Temp: ${Math.round(Whe.main.temp - 273)}°c`;
-  document.querySelector(".Wheather").innerHTML = 
+  document.querySelector(".Wheather").innerHTML = Whe;
   `Wheather: ${Whe.weather[0].main}`;
   console.log(Whe);
   
