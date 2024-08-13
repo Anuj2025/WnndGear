@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="WhetherContainer">
+    <p class="Lod"></p>
+    <div class="Con">
+    <div class="searchContry">
+      <input id="input" type="text" list="WhetherSearch" placeholder="Enter City" />
+      <button id="btn">Search</button>
+    </div>
+    <div id="TempratureImg">
+      <h3 class="Header">
+        City
+      </h3>
+      <div class="Footer">
+        <div class="temp">
+          temp: <span id="temper"></span>
+        </div>
+        <div class="Wheather">
+          weather: <span id="wheat"></span>
+        </div>
+      </div>
+         <div class="windSpace">
+           <div id="speed">
+speed:
+           </div>
+         </div>
+    </div>
+   <p style="font-size: .7rem; padding: 10px; position: relative; top:  10px;" >Using OpenWhetherApi</p>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+<script src="./Auth/.Apikeys/.Import.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+:root{
+  --rich: #050931;
+}
+
+*{
+  margin:  0 0 0;
+  padding: 0;
+  transition: .5s ease;
+  color: #fff;
+}
+
+body {
+    font-size: 15pt;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: var(--rich);
+}
+
+.WhetherContainer{
+  width: calc(100% - 100px);
+  max-width: 300px;
+  height: auto;
+background:
+rgba( 255, 255, 255, 0.25 );
+box-shadow:
+0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:
+blur( 10px );
+-webkit-backdrop-filter:
+blur( 10px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+animation: Setter 1.5s ease;
+justify-content: center;
+align-items: center;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+@keyframes Setter {
+  from{
+    width: 270px;
+    height: 280px;
+    border-radius: 0px;
+    transition:  .5s ease;
+  }
+  to{
+    border-radius: 10px;
+    transition:  .5s ease;
+  }
+}
+
+
+.searchContry{
+margin: 15px;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+}
+
+.searchContry input {
+background: transparent;
+outline: none;
+border: none;
+color: #fff;
+padding: 10px;
+border-radius: 
+5rem;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+ #btn{
+  background: transparent;
+  color: #2AFF12;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  border: 1px solid #2AFF12;
+  padding: 5px;
+  border-radius: .5rem;
+  max-width:100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 5s ease;
+  display: none;
+}
+
+#btn:hover{
+border: 1px solid #fff;
+color: #fff;
+}
+
+input::placeholder{
+  color: #fff;
+}
+
+input:focus{
+  border: 1px solid #1901FF;
+  box-shadow: 1px 1px 5px #007CFF5C;
+}
+
+#TempratureImg{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+#TempratureImg .Logo{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #FF8F01;
+  text-align: center;
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.Footer{
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  font-size: .7rem;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
+p{
+  text-align: center;
+  color: #D1D1D1;
+}
+
+.windSpace{
+  font-size: .7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.temp, .Wheather, .windSpace div{
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius:  1rem;
+}
